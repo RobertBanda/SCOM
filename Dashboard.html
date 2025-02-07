@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SCOM Event Management System</title>
+  <style>
+   
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    .header {
+      background-color: #e82c2c;
+      color: #fff;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav a:hover {
+      text-decoration: underline;
+    }
+
+    .main {
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      padding: 1rem;
+      height: calc(100vh - 140px); 
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 0.8rem; 
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .card-icon {
+      font-size: 2.5rem; 
+      color: #00796b;
+      margin-bottom: 0.8rem;
+    }
+
+    .card h3 {
+      margin-bottom: 0.4rem;
+      color: #00796b;
+      font-size: 1.1rem; 
+    }
+
+    .card p {
+      margin: 0.4rem 0;
+      font-size: 0.9rem; 
+    }
+
+    .btn {
+      color: white;
+      border: none;
+      padding: 0.4rem 0.8rem; 
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 0.9rem;
+    }
+    .btn-profile {
+  background-color: #28a745; 
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.btn-profile:hover {
+  background-color: #1e7e34;
+}
+
+    .btn-tasks { background: #790000; }
+    .btn-tasks:hover { background: #004d40; }
+
+    .btn-events { background: #d32f2f; }
+    .btn-events:hover { background: #9a0007; }
+
+    .btn-notifications { background: #f57c00; }
+    .btn-notifications:hover { background: #e65100; }
+
+    .btn-profile { background: #388e3c; }
+    .btn-profile:hover { background: #1b5e20; }
+
+    .btn-event-list { background: #1976d2; }
+    .btn-event-list:hover { background: #004ba0; }
+
+    .btn-summary { background: #8e24aa; }
+    .btn-summary:hover { background: #5c007a; }
+
+    .footer {
+      background: #e72626;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      position: flex;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="dashboard">
+    <header class="header">
+      <h1>SCOM Event Management System</h1>
+      <nav class="nav">
+        <a href="#tasks">My Tasks</a>
+        <a href="#events">Events</a>
+        <a href="#notifications">Notifications</a>
+        <a href="#Registration">Registration</a>
+        <a href="#logout">Logout</a>
+      </nav>
+    </header>
+
+    <main class="main">
+            <div class="card">
+        <div class="card-icon">📋</div>
+        <h3>My Tasks</h3>
+        <p>Task: Event Preparation</p>
+        <p>Deadline: 2025-12-20</p>
+        <button class="btn btn-tasks">View All Tasks</button>
+      </div>
+
+
+      <div class="card">
+        <div class="card-icon">🎉</div>
+        <h3>Upcoming Events</h3>
+        <p>Annual Conference</p>
+        <p>Date: 2025-12-30</p>
+        <button class="btn btn-events">View Details</button>
+      </div>
+
+
+      <div class="card">
+        <div class="card-icon">🔔</div>
+        <h3>Notifications</h3>
+        <p>3 New Notifications</p>
+        <button class="btn btn-notifications">View Notifications</button>
+      </div>
+
+
+<div class="card">
+  <div class="card-icon">👤</div>
+  <h3>Registration</h3>
+  <p>Name: John Nseula</p>
+  <p>Role: Program Coordinator</p>
+  <a href="NewMemberRegistration.php" class="btn btn-profile">Registr</a>
+</div>
+
+      <div class="card">
+        <div class="card-icon">📅</div>
+        <h3>Event List</h3>
+        <p>Easter Conferences</p>
+        <p>Date: 2025-12-15</p>
+        <button class="btn btn-event-list">View Details</button>
+      </div>
+
+
+      <div class="card">
+        <div class="card-icon">🗂️</div>
+        <h3>Task Summary</h3>
+        <p>2 Tasks Pending</p>
+        <a href="summary.php" class="btn btn-summary">View All</a>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>© 2025 SCOM,JESUS LOVES YOU.</p>
+    </footer>
+  </div>
+</body>
+</html>
